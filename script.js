@@ -1,40 +1,27 @@
-let timer=document.createElement("div")
-timer.style.textAlign="center"
-timer.style.fontSize= "50px";
-timer.style.border="2px solid black"
+const submitbtn=document.querySelector(".button")
+submitbtn.onclick=()=>{
+    const fname=document.getElementById("fname").value;
+    const lname=document.getElementById("lname").value;
+    const email=document.getElementById("email").value;
+    const pass=document.getElementById("pass").value;
+    const cpass=document.getElementById("cpass").value;
 
-document.body.append(timer)
-setTimeout(()=>{
-    timer.textContent="10"
-    setTimeout(()=>{
-        timer.textContent="9"
-        setTimeout(()=>{
-            timer.textContent="8"
-            setTimeout(()=>{
-                timer.textContent="7"
-                setTimeout(()=>{
-                    timer.textContent="6"
-                    setTimeout(()=>{
-                        timer.textContent="5"
-                        setTimeout(()=>{
-                            timer.textContent="4"
-                            setTimeout(()=>{
-                                timer.textContent="3"
-                                setTimeout(()=>{
-                                    timer.textContent="2"
-                                    setTimeout(()=>{
-                                        timer.textContent="1"
-                                        setTimeout(()=>{
-                                            timer.textContent="Happy Independence Day"
-                                            timer.style.color="green"
-                                        },1000)
-                                    },1000)
-                                },1000)
-                            },1000)
-                        },1000)
-                    },1000)
-                },1000)
-            },1000);
-        },1000);
-    },1000);
-},1000);
+
+localStorage.setItem("FirstName", fname);
+localStorage.setItem("LastName", lname);
+localStorage.setItem("emailId", email);
+localStorage.setItem("password", pass);
+localStorage.setItem("Cpassword", cpass);
+
+if(fname == "" && lname=="" && email=="" && pass == "" && cpass ==""){
+    alert("Input fiels is empty")
+}
+else{
+    if(pass!==cpass){
+        alert("password not matched");        
+    }else{
+        alert("registration completed successfully")
+    }
+}
+
+}
