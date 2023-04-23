@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Cinzel:wght@600&family=Commissioner:wght@200&family=Dancing+Script:wght@500;700&family=EB+Garamond:ital,wght@1,400;1,500&family=Golos+Text&family=Pacifico&family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+.body{
+    margin-bottom: 20px;
+}
+.box{
+    border: 1px solid black;
+    height: 25rem;
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.box:hover{ 
+    opacity: 0.8;
+}
+
+.box .images img{
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info h2{
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+.info p{
+    font-size: 15px;
+    margin: 20px;
+    padding: 10px;
+
+}
